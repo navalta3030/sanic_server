@@ -1,0 +1,1 @@
+def ImageDetectionController(string image):

@@ -1,0 +1,3 @@
+sanic_server: sanic-server
+replicas: "1"
+version: "v1"

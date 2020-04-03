@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2beta1
+kind: Config
+build:
+  local:
+    push: false
+  artifacts:
+  - image: navalta3030/sanic-server
+deploy:
+  kubectl:
+    manifests:
+      - k8/sanic-*
