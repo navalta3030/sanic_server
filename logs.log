@@ -1,0 +1,84 @@
+[2020-04-02 17:11:00,903] 6276-INFO app::<module>():l19: Starting localhost development
+[2020-04-02 17:11:00,904] 6276-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
+[2020-04-02 17:11:00,904] 6276-ERROR app::run():l1172: Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1159, in run
+    raise NotImplementedError
+NotImplementedError
+[2020-04-02 17:11:15,324] 4896-INFO app::<module>():l19: Starting localhost development
+[2020-04-02 17:11:15,324] 4896-DEBUG app::_helper():l1422: 
+
+                 Sanic
+         Build Fast. Run Fast.
+
+
+[2020-04-02 17:11:15,325] 4896-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
+[2020-04-02 17:11:15,328] 4896-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-02 17:11:15,347] 4896-DEBUG base_events::_getaddrinfo_debug():l763: Get address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+[2020-04-02 17:11:15,353] 4896-DEBUG base_events::_getaddrinfo_debug():l773: Getting address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 0.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8000, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8000))]
+[2020-04-02 17:11:15,356] 4896-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> is serving
+[2020-04-02 17:11:15,356] 4896-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-02 17:11:15,357] 4896-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-02 17:11:15,357] 4896-INFO server::serve():l919: Starting worker [4896]
+[2020-04-02 17:11:21,587] 4896-INFO base_events::_run_once():l1725: poll took 6234.000 ms: 1 events
+[2020-04-02 17:11:21,587] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51791, 0, 0): <socket.socket fd=140, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51791, 0, 0)>
+[2020-04-02 17:11:21,606] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51792, 0, 0): <socket.socket fd=732, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51792, 0, 0)>
+[2020-04-02 17:11:21,611] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:21,612] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:26,613] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-02 17:11:26,613] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-02 17:11:28,482] 4896-INFO base_events::_run_once():l1729: poll 54984.000 ms took 1859.000 ms: 1 events
+[2020-04-02 17:11:28,483] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51794, 0, 0): <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51794, 0, 0)>
+[2020-04-02 17:11:28,487] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:28,487] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:33,467] 4896-INFO base_events::_run_once():l1729: poll 5000.000 ms took 4968.000 ms: 1 events
+[2020-04-02 17:11:33,468] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:33,468] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:35,218] 4896-INFO base_events::_run_once():l1729: poll 5000.000 ms took 1734.000 ms: 1 events
+[2020-04-02 17:11:35,219] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:35,219] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:36,201] 4896-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 969.000 ms: 1 events
+[2020-04-02 17:11:36,202] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:36,203] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:41,203] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-02 17:11:41,203] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-02 17:11:51,470] 4896-INFO base_events::_run_once():l1729: poll 47282.000 ms took 10266.000 ms: 1 events
+[2020-04-02 17:11:51,470] 4896-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=712 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-02 17:11:51,471] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51797, 0, 0): <socket.socket fd=692, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51797, 0, 0)>
+[2020-04-02 17:11:51,472] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51798, 0, 0): <socket.socket fd=732, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51798, 0, 0)>
+[2020-04-02 17:11:51,479] 4896-INFO app::test():l14: recedasda'hey'
+[2020-04-02 17:11:51,479] 4896-INFO server::log_response():l465: 
+[2020-04-02 17:11:56,480] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-02 17:11:56,480] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-02 17:12:12,002] 4896-INFO base_events::_run_once():l1729: poll 55000.000 ms took 15531.000 ms: 1 events
+[2020-04-02 17:12:12,002] 4896-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=692 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-02 17:12:29,930] 4896-INFO server::serve():l922: Stopping worker [4896]
+[2020-04-02 17:12:29,944] 4896-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+[2020-04-02 17:12:29,944] 4896-ERROR app::run():l1172: Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
+    serve(**server_settings)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
+    loop.run_forever()
+  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
+    self._run_once()
+  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
+    event_list = self._selector.select(timeout)
+  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+KeyboardInterrupt
+[2020-04-02 17:12:32,548] 9824-INFO app::<module>():l19: Starting localhost development
+[2020-04-02 17:12:32,549] 9824-DEBUG app::_helper():l1422: 
+
+                 Sanic
+         Build Fast. Run Fast.
+
+
+[2020-04-02 17:12:32,549] 9824-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
+[2020-04-02 17:12:32,550] 9824-ERROR app::run():l1172: Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1159, in run
+    raise NotImplementedError
+NotImplementedError
