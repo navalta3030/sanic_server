@@ -9,15 +9,17 @@ logger = logging.__logger__()
 # Set logger to override default basicConfig
 sanic = Sanic()
 
+
 @sanic.route("/")
 def test(request):
     logger.info("recedasda'hey'")
     text = "asdasd"
     return response.text(text)
 
+
 if utils.isDevelopment():
-  logger.info("Starting localhost development")
-  sanic.run(host="localhost", port=8000, debug=True, auto_reload=True)
+    logger.info("Starting localhost development")
+    sanic.run(host="0.0.0.0", port=8000, debug=True)
 else:
-  logger.info("Starting production server")
-  sanic.run(host="0.0.0.0", port=os.getenv("SANIC_XRAY_PORT"))
+    logger.info("Starting production server")
+    sanic.run(host="0.0.0.0", port=os.getenv("SANIC_XRAY_PORT"))

@@ -82,3 +82,36 @@ Traceback (most recent call last):
   File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1159, in run
     raise NotImplementedError
 NotImplementedError
+[2020-04-02 19:27:43,033] 4328-INFO app::<module>():l19: Starting localhost development
+[2020-04-02 19:27:43,033] 4328-DEBUG app::_helper():l1422: 
+
+                 Sanic
+         Build Fast. Run Fast.
+
+
+[2020-04-02 19:27:43,033] 4328-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
+[2020-04-02 19:27:43,034] 4328-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-02 19:27:43,039] 4328-DEBUG base_events::_getaddrinfo_debug():l763: Get address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+[2020-04-02 19:27:43,047] 4328-DEBUG base_events::_getaddrinfo_debug():l773: Getting address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8000, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8000))]
+[2020-04-02 19:27:43,047] 4328-DEBUG base_events::_run_once():l1725: poll took 16.000 ms: 1 events
+[2020-04-02 19:27:43,049] 4328-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>, <socket.socket fd=748, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>]> is serving
+[2020-04-02 19:27:43,050] 4328-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-02 19:27:43,050] 4328-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-02 19:27:43,051] 4328-INFO server::serve():l919: Starting worker [4328]
+[2020-04-02 19:27:54,614] 4328-INFO server::serve():l922: Stopping worker [4328]
+[2020-04-02 19:27:54,626] 4328-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+[2020-04-02 19:27:54,626] 4328-ERROR app::run():l1172: Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
+    serve(**server_settings)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
+    loop.run_forever()
+  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
+    self._run_once()
+  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
+    event_list = self._selector.select(timeout)
+  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+KeyboardInterrupt

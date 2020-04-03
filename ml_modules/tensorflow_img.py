@@ -26,3 +26,5 @@ class TensorflowImg():
 
     model = tf.keras.models.load_model(self.__get_model_path(), custom_objects={"KerasLayer":hub.KerasLayer})
     return model
+
+  
