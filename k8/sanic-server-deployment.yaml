@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sanic-server-deployment
+  name: sanic-server
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       component: sanic-server
@@ -16,7 +16,8 @@ spec:
         - name: client
           image: navalta3030/sanic-server
           ports:
-            - containerPort: 3000
+            - containerPort: 8000
           resources:
-            memory: 1500Mi
-            cpu: 500m
+            requests:
+              memory: 1500Mi
+              cpu: 500m

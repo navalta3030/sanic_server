@@ -1,60 +1,148 @@
-[2020-04-02 17:11:00,903] 6276-INFO app::<module>():l19: Starting localhost development
-[2020-04-02 17:11:00,904] 6276-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
-[2020-04-02 17:11:00,904] 6276-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1159, in run
-    raise NotImplementedError
-NotImplementedError
-[2020-04-02 17:11:15,324] 4896-INFO app::<module>():l19: Starting localhost development
-[2020-04-02 17:11:15,324] 4896-DEBUG app::_helper():l1422: 
+[2020-04-03 17:36:46,834] 7624-INFO app::<module>():l23: Starting localhost development
+[2020-04-03 17:36:54,136] 16012-INFO app::<module>():l23: Starting localhost development
+[2020-04-03 17:36:54,136] 16012-DEBUG app::_helper():l1422: 
 
                  Sanic
          Build Fast. Run Fast.
 
 
-[2020-04-02 17:11:15,325] 4896-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
-[2020-04-02 17:11:15,328] 4896-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-02 17:11:15,347] 4896-DEBUG base_events::_getaddrinfo_debug():l763: Get address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
-[2020-04-02 17:11:15,353] 4896-DEBUG base_events::_getaddrinfo_debug():l773: Getting address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 0.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8000, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8000))]
-[2020-04-02 17:11:15,356] 4896-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> is serving
-[2020-04-02 17:11:15,356] 4896-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-02 17:11:15,357] 4896-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-02 17:11:15,357] 4896-INFO server::serve():l919: Starting worker [4896]
-[2020-04-02 17:11:21,587] 4896-INFO base_events::_run_once():l1725: poll took 6234.000 ms: 1 events
-[2020-04-02 17:11:21,587] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51791, 0, 0): <socket.socket fd=140, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51791, 0, 0)>
-[2020-04-02 17:11:21,606] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51792, 0, 0): <socket.socket fd=732, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51792, 0, 0)>
-[2020-04-02 17:11:21,611] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:21,612] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:26,613] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
-[2020-04-02 17:11:26,613] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
-[2020-04-02 17:11:28,482] 4896-INFO base_events::_run_once():l1729: poll 54984.000 ms took 1859.000 ms: 1 events
-[2020-04-02 17:11:28,483] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51794, 0, 0): <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51794, 0, 0)>
-[2020-04-02 17:11:28,487] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:28,487] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:33,467] 4896-INFO base_events::_run_once():l1729: poll 5000.000 ms took 4968.000 ms: 1 events
-[2020-04-02 17:11:33,468] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:33,468] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:35,218] 4896-INFO base_events::_run_once():l1729: poll 5000.000 ms took 1734.000 ms: 1 events
-[2020-04-02 17:11:35,219] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:35,219] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:36,201] 4896-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 969.000 ms: 1 events
-[2020-04-02 17:11:36,202] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:36,203] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:41,203] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
-[2020-04-02 17:11:41,203] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
-[2020-04-02 17:11:51,470] 4896-INFO base_events::_run_once():l1729: poll 47282.000 ms took 10266.000 ms: 1 events
-[2020-04-02 17:11:51,470] 4896-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=712 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-02 17:11:51,471] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51797, 0, 0): <socket.socket fd=692, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51797, 0, 0)>
-[2020-04-02 17:11:51,472] 4896-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=660, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>, <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]> got a new connection from ('::1', 51798, 0, 0): <socket.socket fd=732, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0), raddr=('::1', 51798, 0, 0)>
-[2020-04-02 17:11:51,479] 4896-INFO app::test():l14: recedasda'hey'
-[2020-04-02 17:11:51,479] 4896-INFO server::log_response():l465: 
-[2020-04-02 17:11:56,480] 4896-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
-[2020-04-02 17:11:56,480] 4896-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
-[2020-04-02 17:12:12,002] 4896-INFO base_events::_run_once():l1729: poll 55000.000 ms took 15531.000 ms: 1 events
-[2020-04-02 17:12:12,002] 4896-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=692 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-02 17:12:29,930] 4896-INFO server::serve():l922: Stopping worker [4896]
-[2020-04-02 17:12:29,944] 4896-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-02 17:12:29,944] 4896-ERROR app::run():l1172: Experienced exception while trying to serve
+[2020-04-03 17:36:54,137] 16012-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
+[2020-04-03 17:36:54,137] 16012-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-03 17:36:54,145] 16012-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
+[2020-04-03 17:36:54,145] 16012-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-03 17:36:54,150] 16012-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-03 17:36:54,150] 16012-INFO server::serve():l919: Starting worker [16012]
+[2020-04-03 17:36:54,222] 16012-DEBUG base_events::_run_once():l1725: poll took 78.000 ms: 1 events
+[2020-04-03 17:36:54,222] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49623): <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49623)>
+[2020-04-03 17:36:54,226] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 17:36:54,226] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:36:54,227] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:36:54,271] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 47.000 ms: 1 events
+[2020-04-03 17:36:54,271] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49614): <socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49614)>
+[2020-04-03 17:36:54,272] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49615): <socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49615)>
+[2020-04-03 17:36:59,216] 16012-INFO base_events::_run_once():l1733: poll 4938.000 ms took 4938.000 ms: timeout
+[2020-04-03 17:36:59,229] 16012-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 17:37:06,413] 16012-INFO base_events::_run_once():l1729: poll 55032.000 ms took 7172.000 ms: 1 events
+[2020-04-03 17:37:06,413] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=492 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:37:06,415] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=636 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:48:14,967] 16012-INFO base_events::_run_once():l1725: poll took 668563.000 ms: 1 events
+[2020-04-03 17:48:14,967] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49914): <socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49914)>
+[2020-04-03 17:48:14,968] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49915): <socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49915)>
+[2020-04-03 17:48:14,975] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 17:48:14,975] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:48:14,976] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:48:15,217] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 250.000 ms: 1 events
+[2020-04-03 17:48:15,217] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49916): <socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49916)>
+[2020-04-03 17:48:18,538] 16012-INFO base_events::_run_once():l1729: poll 4750.000 ms took 3312.000 ms: 1 events
+[2020-04-03 17:48:18,538] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49921): <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49921)>
+[2020-04-03 17:48:18,539] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49922): <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49922)>
+[2020-04-03 17:48:18,543] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:18,545] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:18,788] 16012-DEBUG base_events::_run_once():l1729: poll 1422.000 ms took 234.000 ms: 1 events
+[2020-04-03 17:48:18,788] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49923): <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49923)>
+[2020-04-03 17:48:18,791] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:19,965] 16012-INFO base_events::_run_once():l1733: poll 1172.000 ms took 1172.000 ms: timeout
+[2020-04-03 17:48:19,978] 16012-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 17:48:25,319] 16012-INFO base_events::_run_once():l1729: poll 55000.000 ms took 5344.000 ms: 1 events
+[2020-04-03 17:48:25,319] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=636 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:48:25,320] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=456 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:48:25,621] 16012-DEBUG base_events::_run_once():l1725: poll took 312.000 ms: 1 events
+[2020-04-03 17:48:25,621] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49927): <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49927)>
+[2020-04-03 17:48:25,623] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49928): <socket.socket fd=832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49928)>
+[2020-04-03 17:48:25,628] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:25,630] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:25,872] 16012-DEBUG base_events::_run_once():l1725: poll took 250.000 ms: 1 events
+[2020-04-03 17:48:25,872] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49929): <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49929)>
+[2020-04-03 17:48:25,875] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 276, in data_received
+    self.parser.feed_data(data)
+  File "httptools\parser\parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+[2020-04-03 17:48:30,777] 16012-INFO base_events::_run_once():l1725: poll took 4906.000 ms: 1 events
+[2020-04-03 17:48:30,778] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49933): <socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49933)>
+[2020-04-03 17:48:30,778] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49934): <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49934)>
+[2020-04-03 17:48:30,782] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 17:48:30,782] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:48:30,783] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:48:31,028] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 250.000 ms: 1 events
+[2020-04-03 17:48:31,029] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49935): <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49935)>
+[2020-04-03 17:48:34,208] 16012-INFO base_events::_run_once():l1729: poll 4750.000 ms took 3172.000 ms: 1 events
+[2020-04-03 17:48:34,209] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 17:48:34,209] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:48:34,210] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:48:39,211] 16012-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-03 17:48:39,211] 16012-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 17:48:44,965] 16012-INFO base_events::_run_once():l1729: poll 51578.000 ms took 5766.000 ms: 1 events
+[2020-04-03 17:48:44,965] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=812 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:48:44,966] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=788 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:48:45,266] 16012-DEBUG base_events::_run_once():l1725: poll took 297.000 ms: 1 events
+[2020-04-03 17:48:45,267] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49939): <socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49939)>
+[2020-04-03 17:48:45,268] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49940): <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49940)>
+[2020-04-03 17:48:45,274] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 17:48:45,275] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:48:45,275] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:48:45,495] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 218.000 ms: 1 events
+[2020-04-03 17:48:45,498] 16012-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/favicon.ico'
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+[2020-04-03 17:48:45,499] 16012-DEBUG framework::log():l62: CORS: Request to '/favicon.ico' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 17:48:45,500] 16012-DEBUG framework::log():l62: CORS: CORS was handled in the exception handler, skipping
+[2020-04-03 17:48:45,500] 16012-INFO server::log_response():l465: 
+[2020-04-03 17:48:45,517] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 16.000 ms: 1 events
+[2020-04-03 17:48:45,518] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 49941): <socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 49941)>
+[2020-04-03 17:48:50,504] 16012-INFO base_events::_run_once():l1733: poll 4984.000 ms took 4984.000 ms: timeout
+[2020-04-03 17:48:50,504] 16012-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 17:49:23,955] 16012-INFO base_events::_run_once():l1729: poll 54766.000 ms took 33453.000 ms: 1 events
+[2020-04-03 17:49:23,956] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=812 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 17:49:23,958] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=816 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 18:07:50,933] 16012-INFO base_events::_run_once():l1725: poll took 1106985.000 ms: 1 events
+[2020-04-03 18:07:50,933] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 50757): <socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 50757)>
+[2020-04-03 18:07:50,934] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 50758): <socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 50758)>
+[2020-04-03 18:07:50,938] 16012-INFO app::test():l17: recedasda'hey'
+[2020-04-03 18:07:50,939] 16012-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 18:07:50,940] 16012-INFO server::log_response():l465: 
+[2020-04-03 18:07:51,184] 16012-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 250.000 ms: 1 events
+[2020-04-03 18:07:51,184] 16012-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 50759): <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 50759)>
+[2020-04-03 18:07:55,936] 16012-INFO base_events::_run_once():l1733: poll 4750.000 ms took 4750.000 ms: timeout
+[2020-04-03 18:07:55,941] 16012-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 18:08:01,376] 16012-INFO base_events::_run_once():l1729: poll 55000.000 ms took 5437.000 ms: 1 events
+[2020-04-03 18:08:01,376] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=492 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 18:08:01,377] 16012-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=800 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-03 18:11:11,727] 16012-INFO server::serve():l922: Stopping worker [16012]
+[2020-04-03 18:11:11,729] 16012-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+[2020-04-03 18:11:11,729] 16012-ERROR app::run():l1172: Experienced exception while trying to serve
 Traceback (most recent call last):
   File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
     serve(**server_settings)
@@ -69,49 +157,91 @@ Traceback (most recent call last):
   File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
     r, w, x = select.select(r, w, w, timeout)
 KeyboardInterrupt
-[2020-04-02 17:12:32,548] 9824-INFO app::<module>():l19: Starting localhost development
-[2020-04-02 17:12:32,549] 9824-DEBUG app::_helper():l1422: 
+[2020-04-03 23:04:31,327] 3948-INFO app::<module>():l23: Starting localhost development
+[2020-04-03 23:04:31,327] 3948-DEBUG app::_helper():l1422: 
 
                  Sanic
          Build Fast. Run Fast.
 
 
-[2020-04-02 17:12:32,549] 9824-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
-[2020-04-02 17:12:32,550] 9824-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1159, in run
-    raise NotImplementedError
-NotImplementedError
-[2020-04-02 19:27:43,033] 4328-INFO app::<module>():l19: Starting localhost development
-[2020-04-02 19:27:43,033] 4328-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-02 19:27:43,033] 4328-INFO app::_helper():l1433: Goin' Fast @ http://localhost:8000
-[2020-04-02 19:27:43,034] 4328-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-02 19:27:43,039] 4328-DEBUG base_events::_getaddrinfo_debug():l763: Get address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
-[2020-04-02 19:27:43,047] 4328-DEBUG base_events::_getaddrinfo_debug():l773: Getting address info localhost:8000, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8000, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8000))]
-[2020-04-02 19:27:43,047] 4328-DEBUG base_events::_run_once():l1725: poll took 16.000 ms: 1 events
-[2020-04-02 19:27:43,049] 4328-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>, <socket.socket fd=748, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8000, 0, 0)>]> is serving
-[2020-04-02 19:27:43,050] 4328-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-02 19:27:43,050] 4328-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-02 19:27:43,051] 4328-INFO server::serve():l919: Starting worker [4328]
-[2020-04-02 19:27:54,614] 4328-INFO server::serve():l922: Stopping worker [4328]
-[2020-04-02 19:27:54,626] 4328-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-02 19:27:54,626] 4328-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
+[2020-04-03 23:04:31,331] 3948-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
+[2020-04-03 23:04:31,335] 3948-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-03 23:04:31,378] 3948-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
+[2020-04-03 23:04:31,379] 3948-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-03 23:04:31,379] 3948-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-03 23:04:31,379] 3948-INFO server::serve():l919: Starting worker [3948]
+[2020-04-03 23:05:39,890] 3948-INFO base_events::_run_once():l1725: poll took 68516.000 ms: 1 events
+[2020-04-03 23:05:39,891] 3948-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52001): <socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52001)>
+[2020-04-03 23:05:39,901] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:39,901] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:39,902] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:40,140] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 235.000 ms: 1 events
+[2020-04-03 23:05:40,141] 3948-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52002): <socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52002)>
+[2020-04-03 23:05:41,332] 3948-INFO base_events::_run_once():l1729: poll 4765.000 ms took 1187.000 ms: 1 events
+[2020-04-03 23:05:41,333] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:41,333] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:41,339] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:42,258] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 906.000 ms: 1 events
+[2020-04-03 23:05:42,259] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:42,259] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:42,260] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:42,416] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 140.000 ms: 1 events
+[2020-04-03 23:05:42,418] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:42,418] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:42,421] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:42,577] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 156.000 ms: 1 events
+[2020-04-03 23:05:42,578] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:42,578] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:42,579] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:42,730] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 141.000 ms: 1 events
+[2020-04-03 23:05:42,731] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:42,731] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:42,738] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:42,897] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 157.000 ms: 1 events
+[2020-04-03 23:05:42,898] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:42,898] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:42,901] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,058] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 141.000 ms: 1 events
+[2020-04-03 23:05:43,059] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,059] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,060] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,209] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 140.000 ms: 1 events
+[2020-04-03 23:05:43,211] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,211] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,212] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,357] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 156.000 ms: 1 events
+[2020-04-03 23:05:43,358] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,358] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,359] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,513] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 157.000 ms: 1 events
+[2020-04-03 23:05:43,515] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,515] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,516] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,649] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 125.000 ms: 1 events
+[2020-04-03 23:05:43,650] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,650] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,655] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,809] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 157.000 ms: 1 events
+[2020-04-03 23:05:43,810] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,810] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,811] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:43,961] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 140.000 ms: 1 events
+[2020-04-03 23:05:43,963] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:43,963] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:43,966] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:44,129] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 156.000 ms: 1 events
+[2020-04-03 23:05:44,131] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:44,131] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:44,132] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:44,280] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 156.000 ms: 1 events
+[2020-04-03 23:05:44,281] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:44,282] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:44,283] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:44,425] 3948-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 141.000 ms: 1 events
+[2020-04-03 23:05:44,426] 3948-INFO app::test():l17: recedasda'hey'
+[2020-04-03 23:05:44,426] 3948-DEBUG framework::log():l62: CORS: Request to '/' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+[2020-04-03 23:05:44,427] 3948-INFO server::log_response():l465: 
+[2020-04-03 23:05:49,428] 3948-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-03 23:05:49,428] 3948-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-03 23:06:37,867] 3948-INFO base_events::_run_once():l1729: poll 50719.000 ms took 48437.000 ms: 1 events
+[2020-04-03 23:06:37,867] 3948-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=916 read=polling write=<idle, bufsize=0>> received EOF

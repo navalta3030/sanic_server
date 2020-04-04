@@ -7,5 +7,5 @@ spec:
   selector:
     component: sanic-server
   ports:
-    - name: endpoint
+    - protocol: TCP
       port: 8000
