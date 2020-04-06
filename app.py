@@ -9,7 +9,7 @@ logger = logging.__logger__()
 
 # Set logger to override default basicConfig
 sanic = Sanic()
-CORS(sanic)
+# CORS(sanic)
 
 
 @sanic.route("/")

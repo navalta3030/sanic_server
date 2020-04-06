@@ -7,5 +7,5 @@ spec:
   selector:
     component: sanic-server
   ports:
-    - protocol: TCP
+    - name: sanic-sever
       port: 8000
