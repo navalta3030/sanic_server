@@ -1,0 +1,35 @@
+apiVersion: apps/{{ template "version.fullname" .}}
+kind: Deployment
+metadata:
+  name: {{ template "sanic_server.fullname" .}}
+spec:
+  replicas: {{ template "replicas.fullname" .}}
+  selector:
+    matchLabels:
+      component: {{ template "sanic_server.fullname" .}}
+  template:
+    metadata:
+      labels:
+        component: {{ template "sanic_server.fullname" .}}
+    spec:
+      containers:
+        - name: client
+          image: navalta3030/{{ template "sanic_server.fullname" .}}
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              memory: 600Mi
+              cpu: 300m
+---
+apiVersion: {{ template "version.fullname" .}}
+kind: Service
+metadata:
+  name: {{ template "sanic_server.fullname" .}}
+spec:
+  type: ClusterIP
+  selector:
+    component: {{ template "sanic_server.fullname" .}}
+  ports:
+    - name: sanic-sever
+      port: 8000

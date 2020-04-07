@@ -11,7 +11,7 @@ sanic = Sanic()
 # CORS(sanic)
 
 
-@sanic.route("/api/ml/")
+@sanic.route("/")
 def test(request):
     return response.json({'message': 'Hello world!'})
 
