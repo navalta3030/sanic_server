@@ -17,7 +17,7 @@ sanic = Sanic()
 TF = TensorflowImg()
 
 
-@sanic.route("/")
+@sanic.route("/test")
 def test(request):
     return response.json({'message': 'Hello world!'})
 
