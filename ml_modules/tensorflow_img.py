@@ -19,7 +19,8 @@ LABELS = ["EFFUSION", "NORMAL"]
 class TensorflowImg():
     def __init__(self):
         self.logger = __logger__()
-        self.model = self.__load_model()
+        # self.model = self.__load_model()
+        self.model = "No model for now"
 
     def __get_model_path(self):
         """
