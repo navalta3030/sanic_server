@@ -1,2 +1,1 @@
-# Environment Variables Dependency
-- SANIC_XRAY_PORT : should come from kubernetes config
+# Summary ![Production](https://github.com/navalta3030/sanic_server/workflows/Production/badge.svg) ![Staging](https://github.com/navalta3030/sanic_server/workflows/Staging/badge.svg)

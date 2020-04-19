@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         component: {{ template "sanic_server.fullname" .}}
+        auto-deployment-helper: {{ randAlphaNum 5 | quote }}
     spec:
       containers:
         - name: client
