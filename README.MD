@@ -23,3 +23,4 @@ python app.py
 | /test         | Health check                                |  GET    |
 | /predictImage | Predicting image sent                       |  POST   |
 
+

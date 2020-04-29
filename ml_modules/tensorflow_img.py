@@ -13,7 +13,7 @@ IMG_WIDTH = 224
 IMG_HEIGHT = 224
 
 MODEL_URL = "https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4"
-LABELS = ["Pneumonia", "Normal"]
+LABELS = ["Noemal", "Pneumonia"]
 
 Logger = __logger__()
 
