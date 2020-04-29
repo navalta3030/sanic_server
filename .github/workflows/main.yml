@@ -11,6 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Download Model
+      run: |
+        mkdir ml_modules/models
+        curl ${{ secrets.MODEL_LINK }} --output ml_modules/models/model.h5
+
     - name: Build the Docker image
       run: docker build . -f Dockerfile -t navalta3030/sanic-server
     
@@ -26,6 +31,10 @@ jobs:
         personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
         clusterName: xray-production
         version: "1.17.4"
+
+    
+    - name: Perform testing
+      run: python 
     
     - name: Install helm
       run: |

@@ -11,6 +11,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+      
+    - name: Download Model
+      run: |
+        mkdir ml_modules/models
+        curl ${{ secrets.MODEL_LINK }} --output ml_modules/models/model.h5
+
     - name: Build the Docker image
       run: docker build . -f Dockerfile -t navalta3030/sanic-server
     

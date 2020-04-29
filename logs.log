@@ -1,43 +1,78 @@
-[2020-04-17 23:33:54,293] 1788-INFO app::<module>():l35: Starting localhost development
-[2020-04-17 23:33:54,305] 1788-DEBUG app::_helper():l1422: 
+[2020-04-28 20:34:12,485] 6656-INFO tensorflow_img::__get_model_path():l37: Using file D:\xray_project\sanic_server\ml_modules\models\Pneumonia.h5
+[2020-04-28 20:57:03,879] 11348-INFO tensorflow_img::__get_model_path():l35: Using file D:\xray_project\sanic_server\ml_modules\model\*.h5
+[2020-04-28 20:57:39,758] 17364-INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\model\Pneumonia_87.h5
+[2020-04-28 20:57:39,764] 17364-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 20:57:54,270] 17364-INFO tensorflow_img::__load_model():l46: Successfully Loaded model
+[2020-04-28 20:57:54,271] 17364-INFO app::<module>():l38: Starting localhost development
+[2020-04-28 20:57:54,272] 17364-DEBUG app::_helper():l1422: 
 
                  Sanic
          Build Fast. Run Fast.
 
 
-[2020-04-17 23:33:54,312] 1788-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-17 23:33:54,313] 1788-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-17 23:33:54,316] 1788-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-17 23:33:54,317] 1788-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:33:54,321] 1788-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:33:54,321] 1788-INFO server::serve():l919: Starting worker [1788]
-[2020-04-17 23:33:55,656] 1788-INFO base_events::_run_once():l1725: poll took 1328.000 ms: 1 events
-[2020-04-17 23:33:55,657] 1788-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51456): <socket.socket fd=1596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51456)>
-[2020-04-17 23:33:58,546] 1788-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
+[2020-04-28 20:57:54,288] 17364-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
+[2020-04-28 20:57:54,289] 17364-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-28 20:57:54,331] 17364-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
+[2020-04-28 20:57:54,331] 17364-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-28 20:57:54,332] 17364-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-28 20:57:54,332] 17364-INFO server::serve():l919: Starting worker [17364]
+[2020-04-28 21:08:17,117] 17364-INFO base_events::_run_once():l1725: poll took 622782.000 ms: 1 events
+[2020-04-28 21:08:17,117] 17364-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51873): <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51873)>
+[2020-04-28 21:08:17,133] 17364-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51874): <socket.socket fd=1952, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51874)>
+[2020-04-28 21:08:17,140] 17364-INFO server::log_response():l465: 
+[2020-04-28 21:08:17,368] 17364-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 235.000 ms: 1 events
+[2020-04-28 21:08:17,368] 17364-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51876): <socket.socket fd=1928, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51876)>
+[2020-04-28 21:08:17,854] 17364-DEBUG base_events::_run_once():l1729: poll 4765.000 ms took 484.000 ms: 1 events
+[2020-04-28 21:08:17,855] 17364-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/favicon.ico'
+Traceback (most recent call last):
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+[2020-04-28 21:08:17,869] 17364-INFO server::log_response():l465: 
+[2020-04-28 21:08:22,871] 17364-INFO base_events::_run_once():l1733: poll 5000.000 ms took 5000.000 ms: timeout
+[2020-04-28 21:08:22,871] 17364-DEBUG server::keep_alive_timeout_callback():l250: KeepAlive Timeout. Closing connection.
+[2020-04-28 21:09:17,137] 17364-INFO base_events::_run_once():l1733: poll 54265.000 ms took 54265.000 ms: timeout
+[2020-04-28 21:09:17,137] 17364-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+NoneType: None
+[2020-04-28 21:09:17,374] 17364-ERROR handlers::default():l176: Exception occurred while handling uri: unknown
+NoneType: None
+[2020-04-28 21:11:07,335] 17364-INFO base_events::_run_once():l1725: poll took 109968.000 ms: 1 events
+[2020-04-28 21:11:07,335] 17364-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51952): <socket.socket fd=1928, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51952)>
+[2020-04-28 21:11:07,339] 17364-INFO tensorflow_img::__decode_img():l55: Decoding image {img.name}
+[2020-04-28 21:11:07,359] 17364-INFO tensorflow_img::predict():l89: Predicting Image {image_file.name}
+[2020-04-28 21:11:07,368] 17364-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
 Traceback (most recent call last):
   File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
     response = handler(request, *args, **kwargs)
-  File "app.py", line 29, in predict
-    print(TF.predict(file[0]))
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 53, in predict
-    return self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 39, in __decode_img
-    img = tf.image.decode_jpeg(img, channels=3)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\gen_image_ops.py", line 1063, in decode_jpeg
-    name=name, ctx=_ctx)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\gen_image_ops.py", line 1135, in decode_jpeg_eager_fallback
-    attrs=_attrs, ctx=ctx, name=name)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\eager\execute.py", line 67, in quick_execute
-    six.raise_from(core._status_to_exception(e.code, message), None)
-  File "<string>", line 3, in raise_from
-tensorflow.python.framework.errors_impl.InvalidArgumentError: contents must be scalar, got shape [3] [Op:DecodeJpeg]
-[2020-04-17 23:33:58,558] 1788-INFO server::log_response():l465: 
-[2020-04-17 23:33:58,560] 1788-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 2.891 seconds
-[2020-04-17 23:33:58,567] 1788-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 15.000 ms: 1 events
-[2020-04-17 23:33:58,567] 1788-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1596 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:34:51,997] 1788-INFO server::serve():l922: Stopping worker [1788]
-[2020-04-17 23:34:52,001] 1788-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-17 23:34:52,001] 1788-ERROR app::run():l1172: Experienced exception while trying to serve
+  File "app.py", line 33, in predict
+    retVal = TF.predict(file)
+  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 92, in predict
+    np.expand_dims(decoded_img, axis=0))
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 1013, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 498, in predict
+    workers=workers, use_multiprocessing=use_multiprocessing, **kwargs)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 426, in _model_iteration
+    use_multiprocessing=use_multiprocessing)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 646, in _process_inputs
+    x, y, sample_weight=sample_weights)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2383, in _standardize_user_data
+    batch_size=batch_size)
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2410, in _standardize_tensors
+    exception_prefix='input')
+  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 582, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected keras_layer_18_input to have shape (224, 224, 3) but got array with shape (128, 128, 3)
+[2020-04-28 21:11:07,397] 17364-INFO server::log_response():l465: 
+[2020-04-28 21:11:07,431] 17364-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 15.000 ms: 1 events
+[2020-04-28 21:11:07,431] 17364-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1928 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-28 21:12:14,973] 17364-INFO server::serve():l922: Stopping worker [17364]
+[2020-04-28 21:12:14,975] 17364-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+[2020-04-28 21:12:14,976] 17364-ERROR app::run():l1172: Experienced exception while trying to serve
 Traceback (most recent call last):
   File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
     serve(**server_settings)
@@ -52,46 +87,33 @@ Traceback (most recent call last):
   File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
     r, w, x = select.select(r, w, w, timeout)
 KeyboardInterrupt
-[2020-04-17 23:34:55,250] 17320-INFO app::<module>():l35: Starting localhost development
-[2020-04-17 23:34:55,251] 17320-DEBUG app::_helper():l1422: 
+[2020-04-28 21:12:20,326] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\model\Pneumonia_87.h5
+[2020-04-28 21:12:20,332] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 21:12:35,298] - INFO tensorflow_img::__load_model():l46: Successfully Loaded model
+[2020-04-28 21:12:35,299] - INFO app::<module>():l38: Starting localhost development
+[2020-04-28 21:12:35,300] - DEBUG app::_helper():l1422: 
 
                  Sanic
          Build Fast. Run Fast.
 
 
-[2020-04-17 23:34:55,258] 17320-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-17 23:34:55,259] 17320-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-17 23:34:55,268] 17320-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-17 23:34:55,269] 17320-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:34:55,269] 17320-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:34:55,270] 17320-INFO server::serve():l919: Starting worker [17320]
-[2020-04-17 23:34:55,390] 17320-DEBUG base_events::_run_once():l1725: poll took 110.000 ms: 1 events
-[2020-04-17 23:34:55,390] 17320-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51495): <socket.socket fd=1452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51495)>
-[2020-04-17 23:34:56,393] 17320-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 53, in predict
-    return self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 39, in __decode_img
-    img = tf.image.decode_jpeg(img, channels=3)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\gen_image_ops.py", line 1063, in decode_jpeg
-    name=name, ctx=_ctx)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\gen_image_ops.py", line 1135, in decode_jpeg_eager_fallback
-    attrs=_attrs, ctx=ctx, name=name)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\eager\execute.py", line 67, in quick_execute
-    six.raise_from(core._status_to_exception(e.code, message), None)
-  File "<string>", line 3, in raise_from
-tensorflow.python.framework.errors_impl.InvalidArgumentError: contents must be scalar, got shape [3] [Op:DecodeJpeg]
-[2020-04-17 23:34:56,406] 17320-INFO server::log_response():l465: 
-[2020-04-17 23:34:56,407] 17320-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 1.000 seconds
-[2020-04-17 23:34:56,414] 17320-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 16.000 ms: 1 events
-[2020-04-17 23:34:56,414] 17320-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1452 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:36:20,138] 17320-INFO server::serve():l922: Stopping worker [17320]
-[2020-04-17 23:36:20,141] 17320-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-17 23:36:20,141] 17320-ERROR app::run():l1172: Experienced exception while trying to serve
+[2020-04-28 21:12:35,313] - INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
+[2020-04-28 21:12:35,314] - DEBUG selector_events::__init__():l53: Using selector: SelectSelector
+[2020-04-28 21:12:35,320] - INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
+[2020-04-28 21:12:35,321] - WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-28 21:12:35,322] - WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+[2020-04-28 21:12:35,322] - INFO server::serve():l919: Starting worker [6320]
+[2020-04-28 21:12:36,632] - INFO base_events::_run_once():l1725: poll took 1312.000 ms: 1 events
+[2020-04-28 21:12:36,632] - DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51998): <socket.socket fd=1764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51998)>
+[2020-04-28 21:12:36,636] - INFO tensorflow_img::__decode_img():l55: Decoding image {img.name}
+[2020-04-28 21:12:36,639] - INFO tensorflow_img::predict():l89: Predicting Image {image_file.name}
+[2020-04-28 21:12:44,050] - INFO server::log_response():l465: 
+[2020-04-28 21:12:44,051] - WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 7.422 seconds
+[2020-04-28 21:12:44,057] - DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
+[2020-04-28 21:12:44,057] - DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1764 read=polling write=<idle, bufsize=0>> received EOF
+[2020-04-28 21:18:24,927] - INFO server::serve():l922: Stopping worker [6320]
+[2020-04-28 21:18:24,937] - DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+[2020-04-28 21:18:24,937] - ERROR app::run():l1172: Experienced exception while trying to serve
 Traceback (most recent call last):
   File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
     serve(**server_settings)
@@ -106,688 +128,36 @@ Traceback (most recent call last):
   File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
     r, w, x = select.select(r, w, w, timeout)
 KeyboardInterrupt
-[2020-04-17 23:36:24,295] 5048-INFO app::<module>():l35: Starting localhost development
-[2020-04-17 23:36:24,296] 5048-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-17 23:36:24,298] 5048-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-17 23:36:24,299] 5048-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-17 23:36:24,305] 5048-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-17 23:36:24,307] 5048-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:36:24,307] 5048-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:36:24,308] 5048-INFO server::serve():l919: Starting worker [5048]
-[2020-04-17 23:36:25,970] 5048-INFO base_events::_run_once():l1725: poll took 1656.000 ms: 1 events
-[2020-04-17 23:36:25,970] 5048-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51566): <socket.socket fd=932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51566)>
-[2020-04-17 23:51:04,761] 5048-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 55, in predict
-    return self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 41, in __decode_img
-    img = tf.image.decode_jpeg(img, channels=3)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 41, in __decode_img
-    img = tf.image.decode_jpeg(img, channels=3)
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-17 23:51:04,782] 5048-INFO server::log_response():l465: 
-[2020-04-17 23:51:04,782] 5048-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 878.796 seconds
-[2020-04-17 23:51:04,783] 5048-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-17 23:51:04,783] 5048-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51572): <socket.socket fd=1732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51572)>
-[2020-04-17 23:51:04,783] 5048-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51573): <socket.socket fd=1736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51573)>
-[2020-04-17 23:51:04,786] 5048-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 51574): <socket.socket fd=1744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 51574)>
-[2020-04-17 23:51:04,797] 5048-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=932 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:51:04,800] 5048-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1732 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:51:04,800] 5048-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1744 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:51:04,801] 5048-INFO server::log_response():l465: 
-[2020-04-17 23:51:08,128] 5048-INFO server::serve():l920: Stopping worker [5048]
-[2020-04-17 23:51:08,131] 5048-INFO server::log_response():l465: 
-[2020-04-17 23:51:08,236] 5048-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-17 23:51:08,236] 5048-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-17 23:52:15,924] 4128-INFO app::<module>():l37: Starting localhost development
-[2020-04-17 23:52:15,925] 4128-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-17 23:52:15,933] 4128-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-17 23:52:15,934] 4128-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-17 23:52:15,937] 4128-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-17 23:52:15,938] 4128-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:52:15,942] 4128-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-17 23:52:15,943] 4128-INFO server::serve():l919: Starting worker [4128]
-[2020-04-17 23:52:16,293] 4128-DEBUG base_events::_run_once():l1725: poll took 344.000 ms: 1 events
-[2020-04-17 23:52:16,293] 4128-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52223): <socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52223)>
-[2020-04-17 23:57:13,773] 4128-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 30, in predict
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 55, in predict
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 41, in __decode_img
-    import pdb
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 41, in __decode_img
-    import pdb
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-17 23:57:13,786] 4128-INFO server::log_response():l465: 
-[2020-04-17 23:57:13,797] 4128-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 297.500 seconds
-[2020-04-17 23:57:13,798] 4128-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-17 23:57:13,798] 4128-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1260 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-17 23:57:17,537] 4128-INFO base_events::_run_once():l1725: poll took 3750.000 ms: 1 events
-[2020-04-17 23:57:17,537] 4128-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52398): <socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52398)>
-[2020-04-17 23:57:17,538] 4128-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52399): <socket.socket fd=1692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52399)>
-[2020-04-17 23:57:17,544] 4128-INFO server::log_response():l465: 
-[2020-04-17 23:57:17,788] 4128-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 250.000 ms: 1 events
-[2020-04-17 23:57:17,788] 4128-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52400): <socket.socket fd=1696, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52400)>
-[2020-04-17 23:57:22,540] 4128-INFO server::serve():l920: Stopping worker [4128]
-[2020-04-17 23:57:22,646] 4128-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-17 23:57:22,646] 4128-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:01:58,271] 3484-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:01:58,272] 3484-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:01:58,274] 3484-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:01:58,274] 3484-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:01:58,279] 3484-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:01:58,280] 3484-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:01:58,280] 3484-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:01:58,281] 3484-INFO server::serve():l919: Starting worker [3484]
-[2020-04-18 00:02:01,524] 3484-INFO base_events::_run_once():l1725: poll took 3250.000 ms: 1 events
-[2020-04-18 00:02:01,524] 3484-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52610): <socket.socket fd=1540, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52610)>
-[2020-04-18 00:02:26,880] 3484-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 56, in predict
-    return self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 40, in __decode_img
-    img1 = tf.read_file("./test.jpg")
-AttributeError: module 'tensorflow' has no attribute 'read_file'
-[2020-04-18 00:02:26,891] 3484-INFO server::log_response():l465: 
-[2020-04-18 00:02:26,893] 3484-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 25.360 seconds
-[2020-04-18 00:02:26,900] 3484-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 15.000 ms: 1 events
-[2020-04-18 00:02:26,900] 3484-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1540 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:03:27,032] 3484-INFO server::serve():l920: Stopping worker [3484]
-[2020-04-18 00:03:27,035] 3484-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:03:27,036] 3484-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 315, in _select
-    return r, w + x, []
-  File "D:\development\Anaconda3\lib\selectors.py", line 315, in _select
-    return r, w + x, []
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 00:03:31,208] 15984-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:03:31,209] 15984-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:03:31,212] 15984-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:03:31,212] 15984-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:03:31,216] 15984-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:03:31,217] 15984-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:03:31,217] 15984-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:03:31,218] 15984-INFO server::serve():l919: Starting worker [15984]
-[2020-04-18 00:03:33,420] 15984-INFO base_events::_run_once():l1725: poll took 2187.000 ms: 1 events
-[2020-04-18 00:03:33,421] 15984-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52672): <socket.socket fd=1536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52672)>
-[2020-04-18 00:11:22,755] 15984-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 57, in predict
-    return self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 43, in __decode_img
-    img = tf.image.decode_jpeg(img[1], channels=3)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 43, in __decode_img
-    img = tf.image.decode_jpeg(img[1], channels=3)
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 00:11:22,765] 15984-INFO server::log_response():l465: 
-[2020-04-18 00:11:22,776] 15984-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 469.343 seconds
-[2020-04-18 00:11:22,776] 15984-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 2 events
-[2020-04-18 00:11:22,776] 15984-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1536 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:11:22,777] 15984-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52690): <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52690)>
-[2020-04-18 00:11:22,778] 15984-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52691): <socket.socket fd=1500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52691)>
-[2020-04-18 00:11:22,778] 15984-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52692): <socket.socket fd=1268, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52692)>
-[2020-04-18 00:11:22,785] 15984-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1500 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:11:22,788] 15984-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1268 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:11:22,789] 15984-INFO server::log_response():l465: 
-[2020-04-18 00:11:26,454] 15984-INFO server::serve():l920: Stopping worker [15984]
-[2020-04-18 00:11:26,543] 15984-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:11:26,543] 15984-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:11:30,778] 14176-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:11:30,779] 14176-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:11:30,786] 14176-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:11:30,787] 14176-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:11:30,791] 14176-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=696, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:11:30,791] 14176-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:11:30,792] 14176-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:11:30,793] 14176-INFO server::serve():l919: Starting worker [14176]
-[2020-04-18 00:11:33,233] 14176-INFO base_events::_run_once():l1725: poll took 2438.000 ms: 1 events
-[2020-04-18 00:11:33,234] 14176-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=696, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 52947): <socket.socket fd=1084, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 52947)>
-[2020-04-18 00:11:34,372] 14176-INFO server::log_response():l465: 
-[2020-04-18 00:11:34,373] 14176-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 1.125 seconds
-[2020-04-18 00:11:34,378] 14176-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 00:11:34,378] 14176-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1084 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:23:00,916] 14176-INFO server::serve():l922: Stopping worker [14176]
-[2020-04-18 00:23:00,921] 14176-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:23:00,921] 14176-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:32:59,899] 5492-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:32:59,907] 5492-INFO resolver::atomic_download():l413: Downloading TF-Hub Module 'https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4'.
-[2020-04-18 00:33:10,312] 16068-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:33:10,320] 16068-INFO resolver::atomic_download():l413: Downloading TF-Hub Module 'https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4'.
-[2020-04-18 00:33:30,301] 16068-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 11.43MB
-[2020-04-18 00:33:52,219] 16068-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 31.43MB
-[2020-04-18 00:34:22,064] 16068-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 51.43MB
-[2020-04-18 00:34:55,387] 15532-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:34:55,394] 15532-INFO resolver::atomic_download():l413: Downloading TF-Hub Module 'https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4'.
-[2020-04-18 00:35:22,991] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 21.43MB
-[2020-04-18 00:35:41,647] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 41.43MB
-[2020-04-18 00:36:10,976] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 61.43MB
-[2020-04-18 00:36:28,145] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 71.43MB
-[2020-04-18 00:36:51,882] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 81.43MB
-[2020-04-18 00:37:17,883] 15532-INFO resolver::_print_download_progress_msg():l122: Downloading https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4: 91.43MB
-[2020-04-18 00:37:25,507] 15532-INFO resolver::_print_download_progress_msg():l122: Downloaded https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4, Total size: 99.18MB
-[2020-04-18 00:37:25,522] 15532-INFO resolver::atomic_download():l428: Downloaded TF-Hub Module 'https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4'.
-[2020-04-18 00:37:30,375] 15532-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:37:30,389] 15532-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:37:30,398] 15532-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:37:30,400] 15532-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:37:30,403] 15532-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1120, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:37:30,404] 15532-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:37:30,404] 15532-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:37:30,405] 15532-INFO server::serve():l919: Starting worker [15532]
-[2020-04-18 00:44:31,411] 15532-INFO base_events::_run_once():l1725: poll took 421016.000 ms: 1 events
-[2020-04-18 00:44:31,411] 15532-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1120, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54210): <socket.socket fd=1376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54210)>
-[2020-04-18 00:45:41,370] 15532-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 75, in predict
-    self.model.predict(decoded_img)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 75, in predict
-    self.model.predict(decoded_img)
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 00:45:41,381] 15532-INFO server::log_response():l465: 
-[2020-04-18 00:45:41,382] 15532-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 69.969 seconds
-[2020-04-18 00:45:41,390] 15532-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 00:45:41,390] 15532-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1376 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:45:48,874] 15532-INFO server::serve():l920: Stopping worker [15532]
-[2020-04-18 00:45:48,880] 15532-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:45:48,881] 15532-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:45:52,489] 11744-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:45:57,383] 11744-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:45:57,384] 11744-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:45:57,386] 11744-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:45:57,386] 11744-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:45:57,391] 11744-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:45:57,391] 11744-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:45:57,396] 11744-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:45:57,397] 11744-INFO server::serve():l919: Starting worker [11744]
-[2020-04-18 00:46:00,882] 11744-INFO base_events::_run_once():l1725: poll took 3485.000 ms: 1 events
-[2020-04-18 00:46:00,883] 11744-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54274): <socket.socket fd=1792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54274)>
-[2020-04-18 00:46:00,906] 11744-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 72, in predict
-    decoded_img = self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 54, in __decode_img
-    return tf.image.resize(img, [1, IMG_WIDTH, IMG_HEIGHT])
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1357, in resize_images_v2
-    skip_resize_if_same=False)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1088, in _resize_images_common
-    raise ValueError('\'size\' must be a 1-D Tensor of 2 elements: '
-ValueError: 'size' must be a 1-D Tensor of 2 elements: new_height, new_width
-[2020-04-18 00:46:00,918] 11744-INFO server::log_response():l465: 
-[2020-04-18 00:46:00,925] 11744-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 00:46:00,925] 11744-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1792 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:47:14,772] 11744-INFO base_events::_run_once():l1725: poll took 73843.000 ms: 1 events
-[2020-04-18 00:47:14,773] 11744-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54316): <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54316)>
-[2020-04-18 00:47:14,792] 11744-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 72, in predict
-    decoded_img = self.__decode_img(image)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 54, in __decode_img
-    return tf.image.resize(img, [IMG_WIDTH, IMG_HEIGHT])
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1357, in resize_images_v2
-    skip_resize_if_same=False)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1088, in _resize_images_common
-    raise ValueError('\'size\' must be a 1-D Tensor of 2 elements: '
-ValueError: 'size' must be a 1-D Tensor of 2 elements: new_height, new_width
-[2020-04-18 00:47:14,805] 11744-INFO server::log_response():l465: 
-[2020-04-18 00:47:14,813] 11744-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 00:47:14,813] 11744-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=452 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:47:22,364] 11744-INFO server::serve():l922: Stopping worker [11744]
-[2020-04-18 00:47:22,367] 11744-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:47:22,367] 11744-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:47:25,773] 13356-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:47:30,758] 13356-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:47:30,759] 13356-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:47:30,761] 13356-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:47:30,762] 13356-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:47:30,765] 13356-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:47:30,765] 13356-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:47:30,766] 13356-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:47:30,767] 13356-INFO server::serve():l919: Starting worker [13356]
-[2020-04-18 00:47:33,867] 13356-INFO base_events::_run_once():l1725: poll took 3109.000 ms: 1 events
-[2020-04-18 00:47:33,868] 13356-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54334): <socket.socket fd=1796, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54334)>
-[2020-04-18 00:51:06,183] 13356-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    new_img = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 75, in predict
-    pdb.set_trace()
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 75, in predict
-    pdb.set_trace()
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 00:51:06,194] 13356-INFO server::log_response():l465: 
-[2020-04-18 00:51:06,195] 13356-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 212.328 seconds
-[2020-04-18 00:51:06,202] 13356-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 00:51:06,202] 13356-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1796 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 00:51:13,117] 13356-INFO server::serve():l920: Stopping worker [13356]
-[2020-04-18 00:51:13,119] 13356-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 00:51:13,119] 13356-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 00:51:16,948] 9452-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 00:51:21,610] 9452-INFO app::<module>():l35: Starting localhost development
-[2020-04-18 00:51:21,611] 9452-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 00:51:21,619] 9452-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 00:51:21,620] 9452-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 00:51:21,624] 9452-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=2004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 00:51:21,624] 9452-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:51:21,627] 9452-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 00:51:21,628] 9452-INFO server::serve():l919: Starting worker [9452]
-[2020-04-18 00:51:23,545] 9452-INFO base_events::_run_once():l1725: poll took 1906.000 ms: 1 events
-[2020-04-18 00:51:23,546] 9452-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=2004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54479): <socket.socket fd=1988, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54479)>
-[2020-04-18 01:33:57,628] 9452-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    prediction = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 76, in predict
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 76, in predict
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 01:33:57,651] 9452-INFO server::log_response():l465: 
-[2020-04-18 01:33:57,653] 9452-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 2554.109 seconds
-[2020-04-18 01:33:57,653] 9452-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 01:33:57,653] 9452-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=2004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54635): <socket.socket fd=1832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54635)>
-[2020-04-18 01:33:57,662] 9452-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=2004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54636): <socket.socket fd=1580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54636)>
-[2020-04-18 01:33:57,669] 9452-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=2004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 54637): <socket.socket fd=1596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 54637)>
-[2020-04-18 01:33:57,673] 9452-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1988 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:33:57,687] 9452-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1580 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:33:57,687] 9452-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1596 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:33:57,688] 9452-INFO server::log_response():l465: 
-[2020-04-18 01:34:00,721] 9452-INFO server::serve():l920: Stopping worker [9452]
-[2020-04-18 01:34:00,724] 9452-INFO server::log_response():l465: 
-[2020-04-18 01:34:00,830] 9452-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 01:34:00,830] 9452-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 01:34:10,406] 15828-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 01:34:15,196] 15828-INFO app::<module>():l34: Starting localhost development
-[2020-04-18 01:34:15,197] 15828-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 01:34:15,206] 15828-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 01:34:15,207] 15828-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 01:34:15,210] 15828-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 01:34:15,211] 15828-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:34:15,213] 15828-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:34:15,214] 15828-INFO server::serve():l919: Starting worker [15828]
-[2020-04-18 01:34:17,069] 15828-INFO base_events::_run_once():l1725: poll took 1859.000 ms: 1 events
-[2020-04-18 01:34:17,070] 15828-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 55778): <socket.socket fd=1928, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 55778)>
-[2020-04-18 01:34:19,955] 15828-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    prediction = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 75, in predict
-    return _get_image_label
-NameError: name '_get_image_label' is not defined
-[2020-04-18 01:34:19,967] 15828-INFO server::log_response():l465: 
-[2020-04-18 01:34:19,968] 15828-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 2.891 seconds
-[2020-04-18 01:34:19,973] 15828-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 16.000 ms: 1 events
-[2020-04-18 01:34:19,974] 15828-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1928 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:34:25,981] 15828-INFO server::serve():l922: Stopping worker [15828]
-[2020-04-18 01:34:25,983] 15828-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 01:34:25,984] 15828-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 01:34:37,923] 1408-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 01:34:43,212] 1408-INFO app::<module>():l34: Starting localhost development
-[2020-04-18 01:34:43,213] 1408-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 01:34:43,221] 1408-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 01:34:43,223] 1408-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 01:34:43,227] 1408-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 01:34:43,227] 1408-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:34:43,231] 1408-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:34:43,231] 1408-INFO server::serve():l919: Starting worker [1408]
-[2020-04-18 01:34:44,417] 1408-INFO base_events::_run_once():l1725: poll took 1187.000 ms: 1 events
-[2020-04-18 01:34:44,417] 1408-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 55808): <socket.socket fd=1848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 55808)>
-[2020-04-18 01:34:47,272] 1408-INFO server::log_response():l465: 
-[2020-04-18 01:34:47,273] 1408-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 2.859 seconds
-[2020-04-18 01:34:47,280] 1408-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 01:34:47,280] 1408-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1848 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:35:33,978] 1408-INFO server::serve():l922: Stopping worker [1408]
-[2020-04-18 01:35:33,986] 1408-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 01:35:33,986] 1408-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 01:35:41,336] 15268-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 01:35:46,021] 15268-INFO app::<module>():l34: Starting localhost development
-[2020-04-18 01:35:46,029] 15268-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 01:35:46,039] 15268-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 01:35:46,040] 15268-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 01:35:46,044] 15268-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 01:35:46,044] 15268-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:35:46,046] 15268-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:35:46,046] 15268-INFO server::serve():l919: Starting worker [15268]
-[2020-04-18 01:35:51,268] 15268-INFO base_events::_run_once():l1725: poll took 5219.000 ms: 1 events
-[2020-04-18 01:35:51,269] 15268-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 55851): <socket.socket fd=1924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 55851)>
-[2020-04-18 01:36:11,706] 15268-ERROR handlers::default():l176: Exception occurred while handling uri: 'http://localhost:8000/predictImage'
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 974, in handle_request
-    response = handler(request, *args, **kwargs)
-  File "app.py", line 28, in predict
-    prediction = TF.predict(file[0])
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 77, in predict
-    return self._get_image_label(prediction)
-  File "D:\xray_project\sanic_server\ml_modules\tensorflow_img.py", line 77, in predict
-    return self._get_image_label(prediction)
-  File "D:\development\Anaconda3\lib\bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "D:\development\Anaconda3\lib\bdb.py", line 113, in dispatch_line
-    if self.quitting: raise BdbQuit
-bdb.BdbQuit
-[2020-04-18 01:36:11,720] 15268-INFO server::log_response():l465: 
-[2020-04-18 01:36:11,721] 15268-WARNING base_events::_run_once():l1763: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 20.438 seconds
-[2020-04-18 01:36:11,730] 15268-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 16.000 ms: 1 events
-[2020-04-18 01:36:11,730] 15268-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1924 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:36:19,889] 15268-INFO server::serve():l920: Stopping worker [15268]
-[2020-04-18 01:36:19,892] 15268-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 01:36:19,892] 15268-ERROR app::run():l1167: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
-[2020-04-18 01:36:24,621] 8676-INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
-[2020-04-18 01:36:29,920] 8676-INFO app::<module>():l34: Starting localhost development
-[2020-04-18 01:36:29,920] 8676-DEBUG app::_helper():l1422: 
-
-                 Sanic
-         Build Fast. Run Fast.
-
-
-[2020-04-18 01:36:29,921] 8676-INFO app::_helper():l1433: Goin' Fast @ http://0.0.0.0:8000
-[2020-04-18 01:36:29,921] 8676-DEBUG selector_events::__init__():l53: Using selector: SelectSelector
-[2020-04-18 01:36:29,925] 8676-INFO base_events::create_server():l1399: <Server sockets=[<socket.socket fd=1504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> is serving
-[2020-04-18 01:36:29,925] 8676-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:36:29,928] 8676-WARNING server::serve():l914: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
-[2020-04-18 01:36:29,929] 8676-INFO server::serve():l919: Starting worker [8676]
-[2020-04-18 01:36:32,779] 8676-INFO base_events::_run_once():l1725: poll took 2843.000 ms: 1 events
-[2020-04-18 01:36:32,780] 8676-DEBUG selector_events::_accept_connection():l159: <Server sockets=[<socket.socket fd=1504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 8000)>]> got a new connection from ('127.0.0.1', 55885): <socket.socket fd=1760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=('127.0.0.1', 55885)>
-[2020-04-18 01:36:35,635] 8676-INFO server::log_response():l465: 
-[2020-04-18 01:36:35,636] 8676-WARNING base_events::_run_once():l1767: Executing <Task finished coro=<Sanic.handle_request() done, defined at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py:920> result=None created at D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py:425> took 2.860 seconds
-[2020-04-18 01:36:35,641] 8676-DEBUG base_events::_run_once():l1729: poll 5000.000 ms took 0.000 ms: 1 events
-[2020-04-18 01:36:35,641] 8676-DEBUG selector_events::_read_ready__on_eof():l823: <_SelectorSocketTransport fd=1760 read=polling write=<idle, bufsize=0>> received EOF
-[2020-04-18 01:39:37,214] 8676-INFO server::serve():l922: Stopping worker [8676]
-[2020-04-18 01:39:37,217] 8676-DEBUG base_events::close():l602: Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
-[2020-04-18 01:39:37,218] 8676-ERROR app::run():l1172: Experienced exception while trying to serve
-Traceback (most recent call last):
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\app.py", line 1167, in run
-    serve(**server_settings)
-  File "D:\xray_project\sanic_server\.env\lib\site-packages\sanic\server.py", line 920, in serve
-    loop.run_forever()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
-    self._run_once()
-  File "D:\development\Anaconda3\lib\asyncio\base_events.py", line 1716, in _run_once
-    event_list = self._selector.select(timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 323, in select
-    r, w, _ = self._select(self._readers, self._writers, [], timeout)
-  File "D:\development\Anaconda3\lib\selectors.py", line 314, in _select
-    r, w, x = select.select(r, w, w, timeout)
-KeyboardInterrupt
+[2020-04-28 23:25:39,223] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:25:39,226] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:25:51,992] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:26:43,930] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:26:43,934] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:26:56,403] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:27:07,522] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:27:07,526] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:27:21,591] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:28:16,396] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:28:16,400] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:28:29,686] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:28:52,593] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:28:52,598] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:29:05,348] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:29:40,098] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:29:40,102] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:29:52,864] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:30:11,538] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:30:11,541] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:32:02,317] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:32:02,321] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:32:14,871] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:32:27,732] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\Pleural_Thickening_0.73.h5
+[2020-04-28 23:32:27,736] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:32:40,464] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:32:40,469] - INFO tensorflow_img::__decode_img():l55: Decoding image {img.name}
+[2020-04-28 23:32:40,482] - INFO tensorflow_img::predict():l90: Predicting Image {image_file.name}
+[2020-04-28 23:57:27,652] - INFO tensorflow_img::__get_model_path():l36: Using file D:\xray_project\sanic_server\ml_modules\models\model.h5
+[2020-04-28 23:57:27,656] - INFO resolver::tfhub_cache_dir():l79: Using C:\Users\CHRIST~1\AppData\Local\Temp\tfhub_modules to cache modules.
+[2020-04-28 23:57:43,805] - INFO tensorflow_img::_load_model():l46: Successfully Loaded model
+[2020-04-28 23:57:43,810] - INFO tensorflow_img::__decode_img():l55: Decoding image {img.name}
+[2020-04-28 23:57:43,831] - INFO tensorflow_img::predict():l90: Predicting Image {image_file.name}
