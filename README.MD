@@ -23,4 +23,8 @@ python app.py
 | /test         | Health check                                |  GET    |
 | /predictImage | Predicting image sent                       |  POST   |
 
+# Prediction Overview
+- Pneumonia --> 95% accuracy
+  - trained on 3000 datasets, 50% pneumonia and 50% normal.
+
 
