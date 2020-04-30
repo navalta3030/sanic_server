@@ -9,11 +9,11 @@ import os
 # custom imports
 from utils.logging import __logger__
 
-IMG_WIDTH = 224
-IMG_HEIGHT = 224
+IMG_WIDTH = 512
+IMG_HEIGHT = 512
 
 MODEL_URL = "https://tfhub.dev/google/imagenet/resnet_v2_50/classification/4"
-LABELS = ["Noemal", "Pneumonia"]
+LABELS = ["Pneumonia", "No Finding"]
 
 Logger = __logger__()
 
