@@ -24,7 +24,7 @@ python app.py
 | /predictImage | Predicting image sent                       |  POST   |
 
 # Prediction Overview
-- Pneumonia --> 92% accuracy
+- Pneumonia --> 95% accuracy
   - trained on 6000 datasets, 50% pneumonia and 50% normal.
 
 
